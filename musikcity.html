@@ -15,6 +15,16 @@
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="Pragma" content="no-cache">
 <link href="./musikcity_files/style_parceria6.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="css/menumaker.css">
+<style>
+	#cssmenu {
+		position: relative;
+		top: 10px;
+		margin: 10px;
+	}
+</style>
+
 <style type="text/css">
 h1 {
 	font-size: 24px;
@@ -50,44 +60,47 @@ img {
 }
 </style>
 <!--<base target="_top">--><base href="." target="_top">
+
 </head>
 <body>
-<div align="left"><ul class="menu">
-<li><a class="active" href="https://musikcity.mus.br/" title="Início" target="_top">Início</a></li>
-<li class="dropdown">
-<a href="javascript:void(0)" title="Contatos Musicais" target="_top" class="dropbtn">Contatos Musicais</a>
-<div class="dropdown-content">
-<a href="https://musikcity.mus.br/divulgacao.html">Produtores</a>
-<a href="https://musikcity.mus.br/divulgacao.html">Gravadoras</a>
-<a href="https://musikcity.mus.br/divulgacao_para_radios.html">Radialistas</a>
+
+
+<div id="cssmenu">
+	<ul>
+		<li><a href="#">Início</a></li>
+		<li>
+			<a href="#">Contatos Musicais</a>
+			<ul>
+				<li><a href="https://musikcity.mus.br/divulgacao.html">Produtores</a></li>
+				<li><a href="https://musikcity.mus.br/divulgacao.html">Gravadoras</a></li>
+				<li><a href="https://musikcity.mus.br/divulgacao_para_radios.html">Radialistas</a></li>
+				
+			</ul>
+		</li>
+		<li><a href="#">Chances Musicais</a>
+			<ul>
+				<li><a href="https://musikcity.mus.br/parceria.html">Para Letristas</a></li>
+				<li><a href="https://musikcity.mus.br/divulgacao.html">Compositores</a></li>
+				<li><a href="https://musikcity.mus.br/divulgacao.html">Cantores e Bandas</a></li>
+				<li><a href="https://musikcity.mus.br/gravadoras_gospel.html">Gospel</a></li>
+				<li><a href="https://musikcity.mus.br/gravacao_arranjos.html">Gravação, Arranjos</a></li>
+				<li><a href="https://musikcity.mus.br/registro.html">Registro de Música</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Outros</a>
+			<ul>
+				<li><a href="https://musikcity.mus.br/composicoes.html">Ouvir Parcerias</a></li>
+				<li><a href="https://musikcity.mus.br/registro.html">Registro de Música</a></li>
+				<li><a href="https://musikcity.mus.br/masterizacao.html">Masterização</a></li>
+				<li><a href="https://musikcity.mus.br/afinar.html">Afinação de Cantores</a></li>
+				<li><a href="https://musikcity.mus.br/radiosdobrasil.html">Radios ao Vivo</a></li>
+				<li><a href="https://musikcity.mus.br/tvs_do_brasil.html" target="_top">Tvs ao Vivo</a></li>
+				<li><a href="https://musikcity.mus.br/parada.html">Parada Top 50</a></li
+			<ul>
+		</li>
+	</ul>
 </div>
-</li>
-<li class="dropdown">
-<a href="javascript:void(0)" title="Oportunidades Musicais" target="_top" class="dropbtn">CHANCES MUSICAIS</a>
-<div class="dropdown-content">
-<a href="https://musikcity.mus.br/parceria.html">Para Letristas</a>
-<a href="https://musikcity.mus.br/divulgacao.html">Compositores</a>
-<a href="https://musikcity.mus.br/divulgacao.html">Cantores e Bandas</a>
-<a href="https://musikcity.mus.br/gravadoras_gospel.html">Gospel</a>
-<a href="https://musikcity.mus.br/gravacao_arranjos.html">Gravação, Arranjos</a>
-<a href="https://musikcity.mus.br/registro.html">Registro de Música</a>
-</div>
-</li>
-<li class="dropdown">
-<a href="javascript:void(0)" title="Outros" target="_top" class="dropbtn">Outros</a>
-<div class="dropdown-content">
-<a href="https://musikcity.mus.br/composicoes.html">Ouvir Parcerias</a>
-<a href="https://musikcity.mus.br/registro.html">Registro de Música</a>
-<a href="https://musikcity.mus.br/masterizacao.html">Masterização</a>
-<a href="https://musikcity.mus.br/afinar.html">Afinação de Cantores</a>
-<a href="https://musikcity.mus.br/radiosdobrasil.html">Radios ao Vivo</a>
-<a href="https://musikcity.mus.br/tvs_do_brasil.html" target="_top">Tvs ao Vivo</a>
-<a href="https://musikcity.mus.br/parada.html">Parada Top 50</a>
-</div>
-</li>
-</ul>
-</div>
-<p></p>
+
 <p></p>
 <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
 <tbody><tr> <td align="center">Gravação e Arranjos, arranjador produtor musical de sucesso, contatos no meio musical, 
@@ -244,4 +257,13 @@ updated 27 de setembro de 2020</p>
 <p align="center"><br>
 </p>
 </center>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/menumaker.js"></script>
+<script type="text/javascript">
+	$("#cssmenu").menumaker({
+		title: "Menu",
+		format: "multitoggle"
+	});
+</script>
+
 </body></html>
