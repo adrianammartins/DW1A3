@@ -2,4 +2,4 @@
 2) Menu que é drop-down não tem como saber se não passar o mouse por cima
 3) Não contém um campo para busca de conteúdo
 4) Não possui experiencia do usuario (Usuários informando o que acham do site ou dos serviços que o site oferece)
-5)
+5) Formulario não tratado e sem estilo nenhum na página http://musikcity.net.br/atalho/formulario_gravadora22.html
