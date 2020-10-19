@@ -1,4 +1,19 @@
 (function($) {
+	
+	//validacao de formulario com o campo de pesquisa
+	function pesquisar() {
+
+		//verifica preenchimento do campo pesquisar
+		if (document.dados.pesquisar.value == "" ||
+			document.dados.pesquisar.value.length < 4) {
+			alert("Preencha o campo pesuisa para realizar uma busca");
+			document.dados.pesquisar.focus();       
+			return false;
+		}
+		
+		alert("Mensagem enviada com sucesso!");
+		return true;
+	}
 
   $.fn.menumaker = function(options) {
       
